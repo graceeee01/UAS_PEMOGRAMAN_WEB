@@ -16,13 +16,11 @@ CREATE TABLE products (
 2. code untuk konfigurasi WSGI
 ```wsgi
 import sys
-import os
 
-path = '/home/lcwproject/project_uas'
+# Tambahkan path ke direktori aplikasi anda
+path = '/home/PROJEKUASWEB/JANUR_NUNGGING'
 if path not in sys.path:
     sys.path.append(path)
 
-os.chdir(path)
-
-from aaaaa import app as application  # Pastikan nama file dan variabel sesuai
-
+#import aplikasi flask
+from UASWEB import app as application 
